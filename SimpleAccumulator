@@ -1,0 +1,88 @@
+import java.io.IOException;
+
+public class Accumulator {
+    private int accumulator;
+
+    // Default constructor - initializes the accumulator to 0
+    public Accumulator() {
+        accumulator = 0;
+    }
+
+    // Constructor with an initial value
+    public Accumulator(int initialValue) {
+        setAccumulator(initialValue);
+    }
+
+    // Increments the accumulator by 1
+    public void increment() {
+        accumulator++;
+    }
+
+    // Increments the accumulator by a given value
+    public void incrementBy(int byHow) {
+        accumulator += byHow;
+    }
+
+    // Decrements the accumulator by 1
+    public void decrement() {
+        accumulator--;
+    }
+
+    // Decrements the accumulator by a given value
+    public void decrementBy(int byHow) {
+        accumulator -= byHow;
+    }
+
+    // Sets a new value for the accumulator
+    public void setAccumulator(int newValue) {
+        accumulator = newValue;
+    }
+
+    // Returns the current value of the accumulator
+    public int getAccumulator() {
+        return accumulator;
+    }
+
+    // Prints the current value of the accumulator
+    public void printAccumulator() {
+        System.out.println("The current value of the accumulator is: " + getAccumulator());
+    }
+
+    public static void main(String[] args) {
+        // Create an Accumulator object acc1 and test its functionality
+        Accumulator acc1 = new Accumulator();
+
+        System.out.println("Accumulator acc1:\n-------------------------------");
+        acc1.setAccumulator(5);
+        acc1.printAccumulator();
+        acc1.increment();
+        acc1.printAccumulator();
+        acc1.incrementBy(3);
+        acc1.printAccumulator();
+        acc1.decrement();
+        acc1.printAccumulator();
+        acc1.decrementBy(3);
+        acc1.printAccumulator();
+
+        // Create another Accumulator object acc2 with an initial value
+        System.out.println("\n\nAccumulator acc2:\n-------------------------------");
+        Accumulator acc2 = new Accumulator(10);
+        acc2.printAccumulator();
+        acc2.increment();
+        acc2.printAccumulator();
+        acc2.incrementBy(3);
+        acc2.printAccumulator();
+        acc2.decrement();
+        acc2.printAccumulator();
+        acc2.decrementBy(3);
+        acc2.printAccumulator();
+
+        // Wait for the user to press ENTER before exiting
+        System.out.println("Press ENTER to continue...");
+        try {
+            System.in.read();
+        } catch (IOException e) {
+            System.out.println("Input/output error.");
+        }
+    }
+}
