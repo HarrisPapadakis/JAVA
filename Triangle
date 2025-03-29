@@ -1,0 +1,97 @@
+import java.io.IOException;
+
+public class Triangle {
+    // Private instance variables representing the three sides of the triangle
+    private int side_1, side_2, side_3;
+
+    /**
+     * Constructors for objects of class Triangle
+     */
+
+    // Default constructor - initializes all sides to 1
+    public Triangle() {
+        setSides(1, 1, 1);
+    }
+
+    // Constructor that initializes only the first side, other sides default to 1
+    public Triangle(int side_1) {
+        setSides(side_1, 1, 1);
+    }
+
+    // Constructor that initializes the first two sides, the third side defaults to 1
+    public Triangle(int side_1, int side_2) {
+        setSides(side_1, side_2, 1);
+    }
+
+    // Constructor that initializes all three sides with given values
+    public Triangle(int side_1, int side_2, int side_3) {
+        setSides(side_1, side_2, side_3);
+    }
+
+    // Setter method for side_1
+    public void setSide_1(int side_1) {
+        this.side_1 = side_1;
+    }
+
+    // Setter method for side_2
+    public void setSide_2(int side_2) {
+        this.side_2 = side_2;
+    }
+
+    // Setter method for side_3
+    public void setSide_3(int side_3) {
+        this.side_3 = side_3;
+    }
+
+    // Method to set all three sides at once
+    public void setSides(int side_1, int side_2, int side_3) {
+        setSide_1(side_1);
+        setSide_2(side_2);
+        setSide_3(side_3);
+    }
+
+    // Getter method for side_1
+    public int getSide_1() {
+        return side_1;
+    }
+
+    // Getter method for side_2
+    public int getSide_2() {
+        return side_2;
+    }
+
+    // Getter method for side_3
+    public int getSide_3() {
+        return side_3;
+    }
+
+    // Prints the lengths of the three sides of the triangle
+    public void printSides() {
+        System.out.println("The first side has length:\t" + getSide_1() + ",\n" 
+                            + "The second side has length:\t" + getSide_2() + ",\n" 
+                            + "And the third side has length:\t" + getSide_3() + ".\n\n");
+    }
+
+    public static void main(String args[]) {
+        // Creating different Triangle objects with different constructors
+        Triangle tr1 = new Triangle();
+        tr1.printSides();
+
+        Triangle tr2 = new Triangle(2);
+        tr2.printSides();
+
+        Triangle tr3 = new Triangle(2, 3);
+        tr3.printSides();
+
+        Triangle tr4 = new Triangle(2, 3, 4);
+        tr4.printSides();
+
+        // Waits for the user to press ENTER before proceeding
+        System.out.println("Press ENTER to continue...");
+        try {
+            int key = System.in.read();
+        } catch (IOException e) {
+            System.out.println("Error");
+        }
+    }
+}
