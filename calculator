@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class CombinationsCalculator {
+
+    // Αναδρομική μέθοδος υπολογισμού παραγοντικού
+    public static long factorial(int n) {
+        if (n == 0) return 1;
+        return n * factorial(n - 1);
+    }
+
+    // Υπολογισμός συνδυασμών (nCk)
+    public static long combinations(int n, int k) {
+        return factorial(n) / (factorial(k) * factorial(n - k));
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Υπολογισμός Συνδυασμών (n ανά k)");
+
+        System.out.print("Δώσε το n (πλήθος αντικειμένων): ");
+        int n = scanner.nextInt();
+
+        System.out.print("Δώσε το k (σε πόσες ομάδες): ");
+        int k = scanner.nextInt();
+
+        if (n < 0 || k < 0 || k > n) {
+            System.out.println("Λάθος είσοδος. Το k πρέπει να είναι μεταξύ 0 και n.");
+        } else {
+            long result = combinations(n, k);
+            System.out.println("Ο αριθμός των συνδυασμών είναι: " + result);
+        }
+
+        scanner.close();
+    }
+}
