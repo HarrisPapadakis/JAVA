@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=MatrixOperations
+comment1.params=matrix
+comment1.target=void\ printMatrix(int[][])
+comment2.params=matrix
+comment2.target=void\ initializeMatrix(int[][])
+comment3.params=matrix1\ matrix2
+comment3.target=boolean\ legalMultiplication(int[][],\ int[][])
+comment4.params=matrix1\ matrix2
+comment4.target=int[][]\ multiply(int[][],\ int[][])
+numComments=5
