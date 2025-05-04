@@ -4,7 +4,7 @@ public class SortingAlgorithms
 {
     private static  Random random = new Random();
     
-    public static void prinVector (int vector[])
+    public static void printVector (int vector[])
     {
       for(int i=0;  i < vector.length  ; i++)
           System.out.print(vector[i] + "\t");  
@@ -104,3 +104,4 @@ private static int partition(int vector[], int begin, int end)
 }
 
 
+    
