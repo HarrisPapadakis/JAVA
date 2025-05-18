@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=class\ Foithths
+comment1.params=
+comment1.target=void\ print()
+comment2.params=
+comment2.target=double\ getAverage()
+comment3.target=average
+comment4.params=
+comment4.target=String\ getOnoma()
+comment5.params=
+comment5.target=String\ getEpvnymo()
+comment6.target=onoma
+comment7.params=onoma\ epvnymo\ average\ age
+comment7.target=Foithths(String,String,double,int)
+comment8.target=epvnymo
+comment9.target=age
+numComments=10
