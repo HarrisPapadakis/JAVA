@@ -2,12 +2,12 @@ public class TestList
 {
    public static void main(String args[])
    {
-       Foithths foit1 = new Foithths("Νίκος", "Νικολάου", 7.34, 20);
-       Foithths foit2 = new Foithths("?ηµήτρης", "?ηµητρίου", 5.99, 21);
-       Foithths foit3 = new Foithths("Γιώργος", "Γεωργίου", 7.79, 19);
-       Foithths foit4 = new Foithths("Κώστας", "Κωνσταντίνου", 8.75, 22);
-       Foithths foit5 = new Foithths("Ανδρέας", "Ανδρέου", 6.35, 21);
-       Foithths foit6 = new Foithths("Κώστας", "Γεωργίου", 5.75, 20);
+       Foithths foit1 = new Foithths("ΞΞ―ΞΊΞΏΟ‚", "ΞΞΉΞΊΞΏΞ»Ξ¬ΞΏΟ…", 7.34, 20);
+       Foithths foit2 = new Foithths("Ξ”Ξ·ΒµΞ®Ο„ΟΞ·Ο‚", "Ξ”Ξ·ΒµΞ·Ο„ΟΞ―ΞΏΟ…", 5.99, 21);
+       Foithths foit3 = new Foithths("Ξ“ΞΉΟΟΞ³ΞΏΟ‚", "Ξ“ΞµΟ‰ΟΞ³Ξ―ΞΏΟ…", 7.79, 19);
+       Foithths foit4 = new Foithths("ΞΟΟƒΟ„Ξ±Ο‚", "ΞΟ‰Ξ½ΟƒΟ„Ξ±Ξ½Ο„Ξ―Ξ½ΞΏΟ…", 8.75, 22);
+       Foithths foit5 = new Foithths("Ξ‘Ξ½Ξ΄ΟΞ­Ξ±Ο‚", "Ξ‘Ξ½Ξ΄ΟΞ­ΞΏΟ…", 6.35, 21);
+       Foithths foit6 = new Foithths("ΞΟΟƒΟ„Ξ±Ο‚", "Ξ“ΞµΟ‰ΟΞ³Ξ―ΞΏΟ…", 5.75, 20);
        Node node1 = new Node(foit1);
        Node node2 = new Node(foit2);
        Node node3 = new Node(foit3);
@@ -47,11 +47,11 @@ public class TestList
        samos2004_3.insertAlphabetical(node16);
        samos2004_3.insertAlphabetical(node17);
        samos2004_3.insertAlphabetical(node18);
-       System.out.println("\n Η λίστα όταν η εισαγωγή κάθε νέου κόµβου γίνεται στην κεφαλή είναι:");
+       System.out.println("\n Ξ— Ξ»Ξ―ΟƒΟ„Ξ± ΟΟ„Ξ±Ξ½ Ξ· ΞµΞΉΟƒΞ±Ξ³Ο‰Ξ³Ξ® ΞΊΞ¬ΞΈΞµ Ξ½Ξ­ΞΏΟ… ΞΊΟΒµΞ²ΞΏΟ… Ξ³Ξ―Ξ½ΞµΟ„Ξ±ΞΉ ΟƒΟ„Ξ·Ξ½ ΞΊΞµΟ†Ξ±Ξ»Ξ® ΞµΞ―Ξ½Ξ±ΞΉ:");
        samos2004.print();
-       System.out.println("\n Η λίστα όταν η εισαγωγή κάθε νέου κόµβου γίνεται µε αύξοντα µέσο όρο είναι: ");
+       System.out.println("\n Ξ— Ξ»Ξ―ΟƒΟ„Ξ± ΟΟ„Ξ±Ξ½ Ξ· ΞµΞΉΟƒΞ±Ξ³Ο‰Ξ³Ξ® ΞΊΞ¬ΞΈΞµ Ξ½Ξ­ΞΏΟ… ΞΊΟΒµΞ²ΞΏΟ… Ξ³Ξ―Ξ½ΞµΟ„Ξ±ΞΉ ΒµΞµ Ξ±ΟΞΎΞΏΞ½Ο„Ξ± ΒµΞ­ΟƒΞΏ ΟΟΞΏ ΞµΞ―Ξ½Ξ±ΞΉ: ");
        samos2004_2.print();
-       System.out.println("\n Η λίστα όταν η εισαγωγή κάθε νέου κόµβου γίνεται αλφαβητικά είναι: ");
+       System.out.println("\n Ξ— Ξ»Ξ―ΟƒΟ„Ξ± ΟΟ„Ξ±Ξ½ Ξ· ΞµΞΉΟƒΞ±Ξ³Ο‰Ξ³Ξ® ΞΊΞ¬ΞΈΞµ Ξ½Ξ­ΞΏΟ… ΞΊΟΒµΞ²ΞΏΟ… Ξ³Ξ―Ξ½ΞµΟ„Ξ±ΞΉ Ξ±Ξ»Ο†Ξ±Ξ²Ξ·Ο„ΞΉΞΊΞ¬ ΞµΞ―Ξ½Ξ±ΞΉ: ");
        samos2004_3.print();
    } // main
 } // TestList
